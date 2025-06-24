@@ -16,7 +16,12 @@ const App = () => {
           <button onClick={() => dispatch(increment())}>Increment By One</button>
         </div>
         <div>
+<<<<<<< HEAD
           <button onClick={() => dispatch(decrement())}>Decrement By One</button>
+=======
+          <button>Decrement By One</button>
+    
+>>>>>>> 887ecd81418aa82e1e6aed8f30afdb67958b2182
         </div>
     </div>
   )
