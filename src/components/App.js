@@ -1,8 +1,7 @@
-
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { decrement, increment } from "../state/counterSlice";
 import './../styles/App.css';
-import { useSelector, useDispatch } from "react-redux";
-import { increment,decrement } from "../state/counterSlice";
 const App = () => {
 
   const count = useSelector((state) => state.counter.value);
@@ -17,8 +16,6 @@ const App = () => {
         </div>
         <div>
           <button onClick={() => dispatch(decrement())}>Decrement By One</button>
-          <button>Decrement By One</button>
-    
         </div>
     </div>
   )
